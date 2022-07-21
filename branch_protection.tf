@@ -79,9 +79,4 @@ resource "github_branch_protection" "ds_icons_develop" {
     required_approving_review_count = 1
     restrict_dismissals             = false
   }
-
-  required_status_checks {
-    contexts = ["ci"]
-    strict   = true
-  }
 }
